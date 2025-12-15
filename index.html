@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site de Venda com PIX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#e5e5e5;margin:0}
+    .container{max-width:800px;margin:auto;padding:20px}
+    header{text-align:center;padding:30px 0}
+    .card{background:#1a1a1a;border-radius:16px;padding:20px;margin-top:20px;box-shadow:0 0 20px rgba(0,0,0,.6)}
+    h1,h2{color:#f5f5f5}
+    button{background:#2e2e2e;border:none;padding:14px 20px;border-radius:12px;font-size:16px;font-weight:bold;cursor:pointer;width:100%;color:#fff}
+    button:hover{background:#444}
+    .pix-box{text-align:center;margin-top:20px}
+    .pix-code{background:#020617;padding:12px;border-radius:10px;word-break:break-all;font-size:14px}
+    footer{text-align:center;margin-top:40px;opacity:.6}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛒Loja 1 Real</h1>
+      <p>🌐 Loja de 1 Real online — produtos acessíveis, pagamento fácil e economia garantida.|Resgate no discor</p>
+    </header>
+
+    <!-- PRODUTO -->
+    <div class="card">
+      <h2>📦 𝗘𝗦𝗤𝗨𝗘𝗠𝗔 PLAYSTATION 𝗔𝗧𝗨𝗔𝗟𝗜𝗭𝗔𝗗𝗢</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+    
+    <div class="card">
+      <h2>📦 Metodoban Zap</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 Pack de sensibilidade</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦Packs Emojis</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 pack para designer</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 Painel de Tudo</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 Gerador nitro</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 Cheker nitro</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 20 Top ias</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 Painel de Tudo</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+     <div class="card">
+      <h2>📦Discord pronto de venda com bot</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 5,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+     <div class="card">
+      <h2>📦 Limpa DM</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 1,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <div class="card">
+      <h2>📦 Site pronto</h2>
+      <p>Entrega após confirmação do pagamento.</p>
+      <p><strong>Preço:</strong> R$ 10,00</p>
+      <button onclick="mostrarPix()">Pagar com PIX</button>
+    </div>
+
+    <!-- AREA PIX -->
+    <div class="card pix-box" id="pix" style="display:none">
+      <h2>💸 Pagamento PIX</h2>
+      <p>Copie o código PIX abaixo e pague no app do banco:</p>
+
+      <div class="pix-code" id="pixcode">
+       00020126580014BR.GOV.BCB.PIX0136f0a17c92-a2d3-4042-98dd-676a6cb0758b52040000530398654041.005802BR5925Luiz Eduardo Sabini Zanco6009SAO PAULO61080540900062250521QPN4rklYgDNeAqc7yc58563048670
+      </div>
+      <br>
+      <button onclick="copiarPix()">📋 Copiar código PIX</button>
+      <button style="margin-top:10px" onclick="confirmarPagamento()">✅ Já paguei</button>
+      <p style="margin-top:15px">Clique em "Já paguei" após concluir o pagamento.</p>
+    </div>
+
+    <!-- AREA CODIGO FINAL -->
+    <div class="card pix-box" id="codigoFinal" style="display:none">
+      <h2>🎁 Pagamento Confirmado</h2>
+      <p>Obrigado pela compra! Aqui está seu código:</p>
+      <div class="pix-code" id="codigoEntrega"></div>
+      <p style="margin-top:15px">🙏 Deixe seu feedback no nosso Discord!|Resgate la tam bem</p>
+      <a href="https://discord.gg/RQJAuhvS" target="_blank" style="display:inline-block;margin-top:10px;color:#fff;text-decoration:none;font-weight:bold">💬 Entrar no Discord</a>
+    </div>
+
+    <footer>
+      <p>© Loja 1 Real</p>
+    </footer>
+  </div>
+
+  <script>
+    function mostrarPix(){
+      document.getElementById('pix').style.display='block';
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function copiarPix(){
+      const texto = document.getElementById('pixcode').innerText;
+      navigator.clipboard.writeText(texto);
+      alert('Código PIX copiado!');
+    }
+
+    function confirmarPagamento(){
+      const codigo = gerarCodigo();
+      document.getElementById('codigoEntrega').innerText = codigo;
+      document.getElementById('pix').style.display = 'none';
+      document.getElementById('codigoFinal').style.display = 'block';
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function gerarCodigo(){
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      let codigo = 'VIP-';
+      for(let i = 0; i < 10; i++){
+        codigo += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return codigo;
+    }
+  </script>
+</body>
+</html>
